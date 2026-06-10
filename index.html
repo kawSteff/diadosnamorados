@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Larissa ❤️</title>
+<style>
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+body{
+
+    background:linear-gradient(180deg,#eaf6ff,#dff1ff);
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:95%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin:20px 0;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+h1,h2{
+
+    text-align:center;
+
+    color:#ff4f81;
+
+}
+
+p{
+
+    line-height:1.8;
+
+}
+
+.login{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    width:100%;
+
+    max-width:500px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #ccc;
+
+    margin-top:15px;
+
+}
+
+button{
+
+    background:#ff4f81;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 20px;
+
+    border-radius:12px;
+
+    margin-top:15px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    opacity:.9;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.counter{
+
+    text-align:center;
+
+    font-size:28px;
+
+    color:#ff4f81;
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.motivos{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.motivo{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+}
+
+#motivoTexto{
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#ff4f81;
+
+    font-weight:bold;
+
+    margin-top:20px;
+
+}
+
+.final{
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#ff4f81;
+
+    line-height:1.8;
+
+}
+
+.heart{
+
+    position:fixed;
+
+    top:-10px;
+
+    z-index:999;
+
+    animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+    to{
+
+        transform:translateY(110vh);
+
+    }
+
+}
+
+.foto-final{
+
+    width:100%;
+
+    max-width:350px;
+
+    border-radius:20px;
+
+    margin:20px auto;
+
+    display:block;
+
+}
+</style>
+</head>
+<body>
+<div class="login" id="login">
+<div class="login-card">
+<h1>❤️ Feliz Dia dos Namorados ❤️</h1>
+<p>Antes de entrar...</p>
+<p>Qual é o nome do amor da minha vida?</p>
+<input
+
+id="nome"
+
+placeholder="Digite seu nome">
+<button onclick="entrar()">
+
+Entrar ❤️
+</button>
+</div>
+</div>
+<div id="conteudo" class="hidden">
+<div class="container">
+<div class="card">
+<h1>Bem-vinda, meu amor ❤️</h1>
+<p style="text-align:center;margin-top:10px;">
+
+Estamos juntas desde 11/05/2023
+</p>
+<div id="contador" class="counter"></div>
+<center>
+<button onclick="tocarMusica()">
+
+🎵 Tocar nossa música
+</button>
+</center>
+<audio id="musica" loop>
+<source src="musica.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="card">
+<h2>Uma Carta Para Você ❤️</h2>
+<p style="margin-top:20px;">
+
+Larissa,
+</p>
+<p>
+
+Desde 11 de maio de 2023, minha vida ficou mais bonita.
+</p>
+<p>
+
+Já vivemos sorrisos, abraços, conversas sem fim,
+
+momentos difíceis e momentos inesquecíveis.
+</p>
+<p>
+
+Você transformou dias comuns em lembranças especiais.
+</p>
+<p>
+
+Você me faz sentir amada, acolhida e feliz.
+</p>
+<p>
+
+Obrigado por ser minha companheira,
+
+minha melhor amiga e o amor da minha vida.
+</p>
+<p>
+
+Eu te amo hoje, amanhã e em todos os dias que ainda virão.
+</p>
+<br>
+<p>
+
+Com todo meu amor,
+</p>
+<p>
+
+Kawane ❤️
+</p>
+</div>
+<div class="card">
+<h2>📸 Nossas Memórias</h2>
+<div class="gallery">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+<img src="foto5.jpg">
+<img src="foto6.jpg">
+<img src="foto7.jpg">
+<img src="foto8.jpg">
+<img src="foto9.jpg">
+<img src="foto10.jpg">
+</div>
+</div>
+<div class="card">
+<h2>❤️ 10 Motivos Pelos Quais Eu Amo Você ❤️</h2>
+<p style="text-align:center;">
+
+Clique nos corações ❤️
+</p>
+<div class="motivos">
+<button class="motivo" onclick="mostrarMotivo(0)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(1)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(2)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(3)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(4)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(5)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(6)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(7)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(8)">❤️</button>
+<button class="motivo" onclick="mostrarMotivo(9)">❤️</button>
+</div>
+<div id="motivoTexto"></div>
+</div>
+<div class="card">
+<center>
+<button onclick="mostrarFinal()">
+
+💍 Clique aqui, meu amor 💍
+</button>
+</center>
+<div id="final" class="hidden">
+<img src="foto10.jpg" class="foto-final">
+<div class="final">
+<p>
+
+Desde 11 de maio de 2023 eu encontrei
+
+o meu lugar favorito no mundo:
+
+ao seu lado.
+</p>
+<br>
+<p>
+
+Obrigada por cada sorriso,
+
+cada abraço,
+
+cada conversa,
+
+cada sonho compartilhado.
+</p>
+<br>
+<p>
+
+Você é a melhor parte dos meus dias.
+</p>
+<br>
+<p>
+
+Feliz Dia dos Namorados ❤️
+</p>
+<p>
+
+Eu te amo infinitamente.
+</p>
+<br>
+<p>
+
+Com todo o amor do mundo,
+</p>
+<p>
+
+Sua noiva ❤️💍
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+const motivos = [
+
+"🧠 Inteligente",
+
+"🥰 Carinhosa",
+
+"💪 Dedicada",
+
+"🌻 Resiliente",
+
+"😂 Engraçada",
+
+"🤗 Cuidadosa",
+
+"🌹 Respeitosa",
+
+"😅 Ciumenta kkk",
+
+"✨ Sonhadora",
+
+"☀️ Feliz"
+
+];
+
+function entrar(){
+
+let nome =
+
+document.getElementById("nome")
+
+.value
+
+.trim()
+
+.toLowerCase();
+
+if(nome === "larissa"){
+
+document.getElementById("login")
+
+.style.display="none";
+
+document.getElementById("conteudo")
+
+.classList.remove("hidden");
+
+atualizarContador();
+
+setInterval(criarCoracao,500);
+
+}else{
+
+alert("Ops... apenas o amor da minha vida pode entrar ❤️");
+
+}
+
+}
+
+function atualizarContador(){
+
+const inicio = new Date("2023-05-11");
+
+const hoje = new Date();
+
+const dias = Math.floor(
+
+(hoje - inicio) /
+
+(1000*60*60*24)
+
+);
+
+const anos = Math.floor(dias/365);
+
+const meses = Math.floor((dias%365)/30);
+
+const resto = (dias%365)%30;
+
+document.getElementById("contador")
+
+.innerHTML =
+
+`${anos} anos ❤️ ${meses} meses ❤️ ${resto} dias<br><br>${dias} dias juntas`;
+
+}
+
+function tocarMusica(){
+
+document.getElementById("musica").play();
+
+}
+
+function mostrarMotivo(numero){
+
+document.getElementById("motivoTexto")
+
+.innerHTML = motivos[numero];
+
+}
+
+function mostrarFinal(){
+
+document.getElementById("final")
+
+.classList.remove("hidden");
+
+window.scrollTo({
+
+top:document.body.scrollHeight,
+
+behavior:"smooth"
+
+});
+
+}
+
+function criarCoracao(){
+
+const heart =
+
+document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left =
+
+Math.random()*100+"vw";
+
+heart.style.fontSize =
+
+(Math.random()*20+15)+"px";
+
+heart.style.animationDuration =
+
+(Math.random()*3+4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},7000);
+
+}
+</script>
+</body>
+</html>
+ 
